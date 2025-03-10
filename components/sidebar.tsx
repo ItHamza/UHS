@@ -1,6 +1,5 @@
 
 'use client'
-import { Home, Package, User, HelpCircle, Lock, FileText, Book } from "lucide-react";
 import LogoSection from "./LogoSection";
 import ProfileSection from "./ProfileSection";
 import SidebarItem from "./SidebarItem";
