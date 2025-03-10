@@ -1,6 +1,7 @@
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import TooltipSection from "./TooltipSection";
 import { formatDate } from "@/lib/utils";
+import Image  from "next/image";
 import { start } from "repl";
 
 const DataTable = () => {
@@ -38,7 +39,8 @@ const DataTable = () => {
               <TableCell>
               <div className="flex items-center gap-3">
                 {/* Avatar */}
-                <img src={`/icons/${ImagePathSetting[item?.service]}.svg`} alt={item.service} className="w-10 h-10 rounded-full object-cover" />
+                <Image src={`/icons/${ImagePathSetting[item?.service]}.svg`} alt={item.service}
+                className="w-10 h-10 rounded-full object-cover" width={50} height={50} />
 
                 <div>
                   <p className="font-medium">{item.customer}</p>
@@ -77,8 +79,8 @@ const DataTable = () => {
               <TableCell>
                 { item.status != 'Canceled' && (
                   <>
-                    <TooltipSection trigger={<img src="/icons/edit-2.svg" alt="reschedule" title="Reschedule" />} tooltip="Reschedule" />
-                    <TooltipSection trigger={<img src="/icons/trash.svg" alt="cancel" title="Cancel" />} tooltip="Cancel" />
+                    <TooltipSection trigger={<Image src="/icons/edit-2.svg" alt="reschedule" title="Reschedule" width={20} height={20} />} tooltip="Reschedule" />
+                    <TooltipSection trigger={<Image src="/icons/trash.svg" alt="cancel" title="Cancel" width={20} height={20} />} tooltip="Cancel" />
                   </>
                 ) }
               </TableCell>

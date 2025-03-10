@@ -1,4 +1,5 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import Image  from "next/image";
 
 
 const ProfileSection = () => (
@@ -11,7 +12,7 @@ const ProfileSection = () => (
       <p className="text-sm font-medium">John Smith</p>
       <p className="text-xs text-gray-500">john@urban.services</p>
     </div>
-    <img src="/icons/logout.svg" alt="logout" />
+    <Image src="/icons/logout.svg" alt="logout" width={50} height={50} />
   </div>
 );
 

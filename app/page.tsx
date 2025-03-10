@@ -6,8 +6,8 @@ export default function Home() {
   return (
     <>
       <Button className="m-4 new-booking-color px-[55]" variant="destructive">
-        <img src="icons/plus.svg" alt="add" className="plus-background rounded-full h-4.5 p-[3]" />
-        <img src="icons/booking.svg" style={{ filter: 'brightness(100)' }} />
+        <Image src="icons/plus.svg" alt="add" className="plus-background rounded-full h-4.5 p-[3]" width={15} height={15} />
+        <Image src="icons/booking.svg" alt="booking" style={{ filter: 'brightness(100)' }} width={20} height={20} />
         Book New Service
       </Button>
       <div className="p-4 bg-white mx-4 rounded-lg">
