@@ -1,15 +1,19 @@
 "use client";
 
-import { FieldError, useForm } from "react-hook-form";
+import { FieldError, useForm, SubmitHandler } from "react-hook-form";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 
 const LoginForm = () => {
-  const { register, handleSubmit, formState: { errors } } = useForm();
+  const { register, handleSubmit, formState: { errors } } = useForm<LoginFormData>();
 
-  const onSubmit = (data: any) => {
+  interface LoginFormData {
+    email: string;
+    password: string;
+  }
+
+  const onSubmit: SubmitHandler<LoginFormData> = (data) => {
     console.log("Login Data:", data);
-    // Authentication logic here...
   };
 
   return (
