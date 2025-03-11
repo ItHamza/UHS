@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { IBM_Plex_Sans, IBM_Plex_Mono } from "next/font/google";
-import "./globals.css";
+import "../globals.css";
 import Sidebar from "@/components/sidebar";
-// import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import TopNav from "@/components/layout/TopNav";
+// import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",

@@ -1,8 +1,8 @@
-import DataTable from "@/components/DataTable";
-import { Button } from "@/components/ui/button";
-import Image from "next/image";
+import DataTable from "@/components/DataTable"
+import { Button } from "@/components/ui/button"
+import Image from "next/image"
 
-export default function Home() {
+const Booking = () => {
   return (
     <>
       <Button className="m-4 new-booking-color px-[55]" variant="destructive">
@@ -15,5 +15,6 @@ export default function Home() {
         <DataTable />
       </div>
     </>
-  );
+  )
 }
+export default Booking

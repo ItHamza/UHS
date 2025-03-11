@@ -1,7 +1,5 @@
 import WelcomeMessage from "../WelcomeMessage";
-import Stats from "../Stats";
 import SearchBar from "../SearchBar";
-import ServiceFilters from "../SearchFilters";
 
 const TopNav = () => {
   return (
@@ -10,8 +8,6 @@ const TopNav = () => {
         <WelcomeMessage name="John" />
         <SearchBar />
       </div>
-      <ServiceFilters />
-      <Stats />
     </div>
   );
 };
