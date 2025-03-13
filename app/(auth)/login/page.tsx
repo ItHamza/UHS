@@ -1,9 +1,8 @@
-import LoginForm from "@/components/LoginForm";
+// import LoginForm from "@/components/LoginForm";
+import LoginForm from "@/components/ui/LoginForm";
 
 export default function Login() {
   return (
-    <div className="p-[200]">
-      <LoginForm />
-    </div>
+    <LoginForm />
   );
 }
